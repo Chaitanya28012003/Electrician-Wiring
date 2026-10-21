@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore VoltCare electrical service pricing, maintenance packages and service options.">
+  <title>Pricing | VoltCare Electrical</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="icon" type="image/png" href="images/logo img.jpeg">
+</head>
+<body>
+
+  <!-- HEADER: matches the Home 2 / Services design -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="home2.html" aria-label="VoltCare home">
+        <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+        <span class="brand-copy">
+          <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+          <small>Electrical</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <div class="home-dropdown">
+          <button class="nav-link dropdown-trigger" id="homeDropdownBtn" aria-expanded="false" type="button">
+            Home <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="homeDropdown">
+            <a href="index.html">Home 1 — Classic</a>
+            <a href="home2.html">Home 2 — Premium</a>
+          </div>
+        </div>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link active" href="pricing.html">Pricing</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="dash.html">Dashboard</a>
+        <a href="login.html" class="mobile-login-link">
+  
+  <span>Login</span>
+</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="round-control" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="round-control" id="rtlToggle" type="button" aria-label="Toggle RTL" title="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+          <a class="header-cta" href="login.html">
+          Login
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: IMAGE LEFT, TEXT RIGHT -->
+    <section class="pricing-hero">
+      <div class="container pricing-hero-grid">
+        <div class="pricing-hero-image reveal">
+         <img
+  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1100&q=85"
+  alt="Electrical technician working with professional equipment"
+  loading="lazy"
+>
+          <div class="hero-image-badge">
+            <span><i data-lucide="badge-dollar-sign"></i></span>
+            <div>
+              <strong>Clear Pricing</strong>
+              <small>Options to suit your needs</small>
+            </div>
+          </div>
+          <div class="hero-image-corner">
+            <i data-lucide="zap"></i> VoltCare Electrical
+          </div>
+        </div>
+
+        <div class="pricing-hero-content reveal">
+          <span class="eyebrow"><i data-lucide="wallet"></i> SIMPLE. CLEAR. FLEXIBLE.</span>
+          <h1>Electrical Service Pricing <span>Made Simple.</span></h1>
+          <p>
+            Explore our sample service prices and maintenance options.
+            Choose a service that fits your needs and request a quote
+            for your property.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing-plans" class="btn btn-primary">
+              View Pricing <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="home2.html#contact" class="btn btn-outline">Request a Quote</a>
+          </div>
+          <div class="hero-points">
+            <span><i data-lucide="check-circle-2"></i> Clear estimates</span>
+            <span><i data-lucide="check-circle-2"></i> Flexible options</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: PRICING OVERVIEW -->
+    <section class="section pricing-overview">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">PRICING AT A GLANCE</span>
+          <h2>Choose the Service <span>You Need</span></h2>
+          <p>Start with a service category, then request an estimate based on your property's requirements.</p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card reveal">
+            <div class="overview-icon"><i data-lucide="wrench"></i></div>
+            <div>
+              <h3>Repairs</h3>
+              <p>For common electrical issues and troubleshooting.</p>
+              <a href="#pricing-plans">See options <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="overview-card reveal">
+            <div class="overview-icon"><i data-lucide="plug-zap"></i></div>
+            <div>
+              <h3>Installations</h3>
+              <p>For new fittings, outlets and electrical equipment.</p>
+              <a href="#pricing-plans">See options <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="overview-card reveal">
+            <div class="overview-icon"><i data-lucide="shield-check"></i></div>
+            <div>
+              <h3>Maintenance</h3>
+              <p>For planned checks and ongoing electrical care.</p>
+              <a href="#packages">See packages <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICE PRICE CARDS -->
+    <section class="section pricing-plans" id="pricing-plans">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">SAMPLE SERVICE RATES</span>
+          <h2>Our Service <span>Price Guide</span></h2>
+          <p>These example prices are for design demonstration only. Final charges depend on the job, materials and location.</p>
+        </div>
+
+        <div class="plans-grid">
+          <article class="price-card reveal">
+            <div class="price-card-top">
+              <span class="plan-icon"><i data-lucide="search-check"></i></span>
+              <span class="plan-label">BASIC</span>
+            </div>
+            <h3>Electrical Inspection</h3>
+            <p class="plan-description">For an initial check of an electrical concern.</p>
+            <div class="price">
+              <span class="currency">₹</span><strong>499</strong><small> / visit</small>
+            </div>
+            <div class="price-divider"></div>
+            <ul>
+              <li><i data-lucide="check"></i> Initial visual inspection</li>
+              <li><i data-lucide="check"></i> Basic issue assessment</li>
+              <li><i data-lucide="check"></i> Suggested next steps</li>
+              <li class="muted-feature"><i data-lucide="minus"></i> Parts not included</li>
+            </ul>
+            <a class="plan-button" href="home2.html#contact">Request Estimate <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="price-card featured-plan reveal">
+            <span class="popular-badge">POPULAR OPTION</span>
+            <div class="price-card-top">
+              <span class="plan-icon"><i data-lucide="wrench"></i></span>
+              <span class="plan-label">STANDARD</span>
+            </div>
+            <h3>Minor Electrical Repair</h3>
+            <p class="plan-description">For small repairs after the issue is assessed.</p>
+            <div class="price">
+              <span class="currency">₹</span><strong>999</strong><small> / starting</small>
+            </div>
+            <div class="price-divider"></div>
+            <ul>
+              <li><i data-lucide="check"></i> Initial fault assessment</li>
+              <li><i data-lucide="check"></i> Minor repair labour</li>
+              <li><i data-lucide="check"></i> Basic functional checks</li>
+              <li class="muted-feature"><i data-lucide="minus"></i> Parts charged separately</li>
+            </ul>
+            <a class="plan-button" href="home2.html#contact">Request Estimate <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="price-card reveal">
+            <div class="price-card-top">
+              <span class="plan-icon"><i data-lucide="settings-2"></i></span>
+              <span class="plan-label">CUSTOM</span>
+            </div>
+            <h3>Installation Project</h3>
+            <p class="plan-description">For new fittings or larger installation work.</p>
+            <div class="price custom-price">
+              <strong>Custom</strong>
+            </div>
+            <p class="custom-note">Price based on project scope</p>
+            <div class="price-divider"></div>
+            <ul>
+              <li><i data-lucide="check"></i> Requirement assessment</li>
+              <li><i data-lucide="check"></i> Scope-based estimate</li>
+              <li><i data-lucide="check"></i> Material options</li>
+              <li><i data-lucide="check"></i> Project scheduling</li>
+            </ul>
+            <a class="plan-button" href="home2.html#contact">Request Estimate <i data-lucide="arrow-up-right"></i></a>
+          </article>
+        </div>
+
+        <p class="pricing-disclaimer">
+          <i data-lucide="info"></i>
+          Displayed rates are illustrative examples, not confirmed VoltCare quotations.
+          Please confirm actual rates before publishing.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PACKAGES -->
+    <section class="section packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">PLANS FOR DIFFERENT NEEDS</span>
+          <h2>Electrical Care <span>Packages</span></h2>
+          <p>Example package structures for homeowners, families and business properties.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card reveal">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Comfortable modern home" loading="lazy">
+            </div>
+            <div class="package-content">
+              <span class="package-kicker">FOR HOMEOWNERS</span>
+              <h3>Home Essential</h3>
+              <p>For routine electrical care in a residential property.</p>
+              <ul>
+                <li><i data-lucide="check"></i> Scheduled inspection</li>
+                <li><i data-lucide="check"></i> Basic safety review</li>
+                <li><i data-lucide="check"></i> Maintenance recommendations</li>
+              </ul>
+              <a href="home2.html#contact" class="package-link">Ask for a quote <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="package-card package-featured reveal">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Modern business office interior" loading="lazy">
+            </div>
+            <div class="package-content">
+              <span class="package-kicker">FOR BUSINESSES</span>
+              <h3>Business Care</h3>
+              <p>For shops and offices looking for planned electrical maintenance.</p>
+              <ul>
+                <li><i data-lucide="check"></i> Agreed maintenance schedule</li>
+                <li><i data-lucide="check"></i> Electrical system review</li>
+                <li><i data-lucide="check"></i> Work recommendations</li>
+              </ul>
+              <a href="home2.html#contact" class="package-link">Ask for a quote <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="package-card reveal">
+            <div class="package-image">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85" alt="Large commercial property" loading="lazy">
+            </div>
+            <div class="package-content">
+              <span class="package-kicker">FOR LARGER SITES</span>
+              <h3>Project Care</h3>
+              <p>For larger properties or electrical installation projects.</p>
+              <ul>
+                <li><i data-lucide="check"></i> Scope-based planning</li>
+                <li><i data-lucide="check"></i> Custom project estimate</li>
+                <li><i data-lucide="check"></i> Agreed work milestones</li>
+              </ul>
+              <a href="home2.html#contact" class="package-link">Ask for a quote <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PRICING FAQ -->
+    <section class="section faq-section" id="pricing-faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow">GOOD TO KNOW</span>
+          <h2>Pricing <span>Questions</span></h2>
+          <p>Here are a few common questions to help you understand how an electrical service estimate may be prepared.</p>
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=850&q=85" alt="Technician inspecting technical equipment" loading="lazy">
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>What determines the final price?<span><i data-lucide="plus"></i></span></summary>
+            <p>The final estimate may depend on the type of work, time required, materials, site conditions and travel requirements.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are materials included in the listed prices?<span><i data-lucide="plus"></i></span></summary>
+            <p>Not necessarily. Material costs should be confirmed in your individual quotation before the work begins.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I get a custom quote for my property?<span><i data-lucide="plus"></i></span></summary>
+            <p>Yes. Share the type of service and basic project details through the contact page to request an estimate.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you offer business maintenance packages?<span><i data-lucide="plus"></i></span></summary>
+            <p>You can enquire about a package tailored to the property, expected work and preferred maintenance schedule.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>When should I confirm the final price?<span><i data-lucide="plus"></i></span></summary>
+            <p>Confirm the scope, labour, materials and any additional charges with the service provider before approving the job.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CTA -->
+    <section class="pricing-cta-section">
+      <div class="container">
+        <div class="pricing-cta reveal">
+          <div class="cta-decoration decoration-one"></div>
+          <div class="cta-decoration decoration-two"></div>
+          <div class="pricing-cta-copy">
+            <span class="eyebrow">LET'S PLAN YOUR SERVICE</span>
+            <h2>Need a Price for Your Electrical Work?</h2>
+            <p>Tell us what you need and request an estimate tailored to your project.</p>
+          </div>
+          <a href="home2.html#contact" class="btn btn-light">
+            Request a Quote <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: same style as Home 2 / Services -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a class="footer-brand brand" href="home2.html">
+            <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+            <span class="brand-copy">
+              <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+              <small>Electrical</small>
+            </span>
+          </a>
+          <p>
+  We deliver safe and reliable electrical services for homes and businesses, with quality workmanship and customer satisfaction at the heart of everything we do.
+</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="home2.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="home2.html#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <a href="services.html#our-services">Electrical Installation</a>
+          <a href="services.html#our-services">Electrical Repairs</a>
+          <a href="services.html#our-services">Lighting Solutions</a>
+          <a href="services.html#our-services">Wiring & Maintenance</a>
+          <a href="services.html#our-services">Safety Inspections</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get in Touch</h3>
+          <p><i data-lucide="phone"></i> <a href="home2.html#contact">Contact our team</a></p>
+          <p><i data-lucide="mail"></i> <a href="home2.html#contact">Send an enquiry</a></p>
+          <p><i data-lucide="map-pin"></i> Residential & Commercial Service</p>
+          <a class="footer-booking" href="home2.html#contact">Book an Appointment <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> VoltCare Electrical. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pricing.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard | VoltCare Electrical</title>
+  <link rel="stylesheet" href="dash.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo img.jpeg">
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <a href="home.html" class="brand">
+        <span class="brand-logo">
+          <img src="images/logo img.jpeg" alt="VoltCare"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <span class="logo-fallback"><i data-lucide="zap"></i></span>
+        </span>
+        <span class="brand-text"><b>Volt<span>Care</span></b><small>ELECTRICAL</small></span>
+      </a>
+
+      <div class="sidebar-caption">CUSTOMER PORTAL</div>
+      <nav class="side-nav">
+        <a class="side-link active" href="#overview"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
+        <a class="side-link" href="#requests"><i data-lucide="clipboard-list"></i><span>Service Requests</span><span class="nav-count">4</span></a>
+        <a class="side-link" href="#appointments"><i data-lucide="calendar-days"></i><span>Appointments</span></a>
+        <a class="side-link" href="#activity"><i data-lucide="activity"></i><span>Service History</span></a>
+        <a class="side-link" href="pricing.html"><i data-lucide="receipt"></i><span>Pricing & Billing</span></a>
+        <a class="side-link" href="#profile"><i data-lucide="user-round"></i><span>My Profile</span></a>
+        <a class="side-link" href="contact.html"><i data-lucide="headset"></i><span>Help & Support</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-help">
+          <span class="help-icon"><i data-lucide="shield-check"></i></span>
+          <b>Need urgent help?</b>
+          <p>Our electrical support team is ready.</p>
+          <a href="contact.html">Get assistance <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <a class="side-link logout-link" href="home.html"><i data-lucide="log-out"></i><span>Back to Website</span></a>
+        <div class="sidebar-copy">© <span id="sidebarYear"></span> VoltCare Electrical</div>
+      </div>
+    </aside>
+
+    <!-- MAIN AREA -->
+    <div class="main-area">
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="topbar-title">
+          <button class="icon-button mobile-sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+            <i data-lucide="menu"></i>
+          </button>
+          <div>
+            <h1>Customer Dashboard</h1>
+            <p>Overview <span class="breadcrumb-separator">/</span> Your account</p>
+          </div>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="round-button" id="themeToggle" aria-label="Toggle dark mode" title="Dark mode">
+            <i data-lucide="moon"></i>
+          </button>
+          <button class="round-button rtl-button" id="rtlToggle" aria-label="Toggle RTL">RTL</button>
+          <button class="round-button notification-button" id="notificationToggle" aria-label="Notifications">
+            <i data-lucide="bell"></i><span class="notification-dot">2</span>
+          </button>
+          <button class="profile-button" id="profileToggle" aria-label="Customer profile">VC</button>
+        </div>
+
+        <div class="small-popover" id="notificationPopover">
+          <b>Notifications</b>
+          <p><i data-lucide="calendar-clock"></i> Appointment request awaiting confirmation.</p>
+          <p><i data-lucide="shield-check"></i> Keep your electrical safety checks up to date.</p>
+        </div>
+        <div class="small-popover profile-popover" id="profilePopover">
+          <b>Customer account</b>
+          <a href="#profile">View profile</a>
+          <a href="contact.html">Contact support</a>
+        </div>
+      </header>
+
+      <main id="overview" class="dashboard-content">
+        <!-- WELCOME BANNER -->
+        <section class="welcome-banner">
+          <div class="welcome-copy">
+            <span class="welcome-eyebrow"><i data-lucide="sparkles"></i> WELCOME TO VOLTCARE</span>
+            <h2>Welcome back, Customer!</h2>
+            <p>Here’s your electrical service overview and upcoming appointment updates.</p>
+          </div>
+          <div class="welcome-right">
+            <span class="account-status"><i data-lucide="check-circle-2"></i> Customer Account</span>
+            <a href="contact.html" class="banner-button"><i data-lucide="plus"></i> Request Service</a>
+          </div>
+          <span class="banner-decoration decoration-one"></span>
+          <span class="banner-decoration decoration-two"></span>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-grid" aria-label="Service summary">
+          <article class="stat-card">
+            <div class="stat-icon icon-blue"><i data-lucide="clipboard-list"></i></div>
+            <div class="stat-info"><span>Total Requests</span><strong id="totalCount">04</strong><small>All service requests</small></div>
+            <span class="stat-corner"><i data-lucide="arrow-up-right"></i></span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon icon-orange"><i data-lucide="clock-3"></i></div>
+            <div class="stat-info"><span>Pending Requests</span><strong id="pendingCount">01</strong><small>Awaiting confirmation</small></div>
+            <span class="stat-corner"><i data-lucide="hourglass"></i></span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon icon-green"><i data-lucide="check-circle-2"></i></div>
+            <div class="stat-info"><span>Completed Jobs</span><strong id="completedCount">01</strong><small>Successfully completed</small></div>
+            <span class="stat-corner"><i data-lucide="check"></i></span>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon icon-purple"><i data-lucide="calendar-clock"></i></div>
+            <div class="stat-info"><span>Upcoming Visits</span><strong id="upcomingCount">02</strong><small>Scheduled appointments</small></div>
+            <span class="stat-corner"><i data-lucide="calendar"></i></span>
+          </article>
+        </section>
+
+        <!-- MAIN WIDGETS -->
+        <section class="dashboard-grid">
+          <article class="content-card weekly-card" id="activity">
+            <div class="card-heading">
+              <div><h3>Weekly Service Activity</h3><p>Your service activity at a glance</p></div>
+              <span class="mini-icon"><i data-lucide="chart-no-axes-column"></i></span>
+            </div>
+            <div class="chart-summary"><strong>Service overview</strong><span><i></i> Activity</span></div>
+            <div class="bar-chart" id="barChart" aria-label="Illustrative weekly service activity">
+              <div class="bar-column"><div class="bar bar-highlight" style="height:66%"></div><span>Mon</span></div>
+              <div class="bar-column"><div class="bar" style="height:40%"></div><span>Tue</span></div>
+              <div class="bar-column"><div class="bar" style="height:51%"></div><span>Wed</span></div>
+              <div class="bar-column"><div class="bar" style="height:34%"></div><span>Thu</span></div>
+              <div class="bar-column"><div class="bar" style="height:46%"></div><span>Fri</span></div>
+              <div class="bar-column"><div class="bar" style="height:82%"></div><span>Sat</span></div>
+              <div class="bar-column"><div class="bar" style="height:60%"></div><span>Sun</span></div>
+            </div>
+            <p class="chart-note"><i data-lucide="info"></i> Illustrative activity display, not live service analytics.</p>
+          </article>
+
+          <article class="content-card appointment-card" id="appointments">
+            <div class="card-heading">
+              <div><h3>Next Appointment</h3><p>Your upcoming electrical service</p></div>
+              <span class="mini-icon"><i data-lucide="calendar-check"></i></span>
+            </div>
+            <div class="appointment-highlight">
+              <div class="appointment-date"><span>OCT</span><b>22</b><small>2026</small></div>
+              <div class="appointment-details"><h4>Wiring Inspection</h4><p><i data-lucide="clock"></i> 10:00 AM – 11:00 AM</p><p><i data-lucide="map-pin"></i> Customer location</p></div>
+            </div>
+            <div class="appointment-status"><span class="status-dot"></span> Awaiting confirmation</div>
+            <a href="contact.html" class="track-button">Manage Appointment <i data-lucide="arrow-up-right"></i></a>
+            <div class="upcoming-list">
+              <h4>Other Requests</h4>
+              <div class="upcoming-item"><span class="upcoming-symbol"><i data-lucide="lightbulb"></i></span><div><b>Lighting Installation</b><small>Appointment details to be confirmed</small></div><span class="tiny-status progress">In progress</span></div>
+              <div class="upcoming-item"><span class="upcoming-symbol"><i data-lucide="plug"></i></span><div><b>Outlet Repair</b><small>Appointment details to be confirmed</small></div><span class="tiny-status scheduled">Scheduled</span></div>
+            </div>
+          </article>
+        </section>
+
+        <!-- SERVICE REQUESTS -->
+        <section class="content-card requests-card" id="requests">
+          <div class="card-heading requests-heading">
+            <div><h3>Recent Service Requests</h3><p>Track your service requests and their current status</p></div>
+            <a href="services.html" class="view-all">Explore Services <i data-lucide="arrow-up-right"></i></a>
+          </div>
+          <div class="table-controls">
+            <label class="search-box"><i data-lucide="search"></i><input type="search" id="requestSearch" placeholder="Search service requests..."></label>
+            <select id="statusFilter" aria-label="Filter by status">
+              <option value="all">All statuses</option>
+              <option value="Pending">Pending</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Completed">Completed</option>
+              <option value="Scheduled">Scheduled</option>
+            </select>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>Request ID</th><th>Service</th><th>Date Requested</th><th>Status</th><th>Action</th></tr></thead>
+              <tbody id="requestTable">
+                <tr data-status="Pending"><td><b>#VC-1048</b></td><td><span class="service-name"><i data-lucide="zap"></i> Wiring Inspection</span></td><td>Oct 15, 2026</td><td><span class="status pending">Pending</span></td><td><button class="view-button" data-request="VC-1048">View details</button></td></tr>
+                <tr data-status="In Progress"><td><b>#VC-1047</b></td><td><span class="service-name"><i data-lucide="lightbulb"></i> Lighting Installation</span></td><td>Oct 12, 2026</td><td><span class="status progress">In Progress</span></td><td><button class="view-button" data-request="VC-1047">View details</button></td></tr>
+                <tr data-status="Completed"><td><b>#VC-1046</b></td><td><span class="service-name"><i data-lucide="shield-check"></i> Safety Inspection</span></td><td>Oct 08, 2026</td><td><span class="status completed">Completed</span></td><td><button class="view-button" data-request="VC-1046">View details</button></td></tr>
+                <tr data-status="Scheduled"><td><b>#VC-1045</b></td><td><span class="service-name"><i data-lucide="plug"></i> Outlet Repair</span></td><td>Oct 06, 2026</td><td><span class="status scheduled">Scheduled</span></td><td><button class="view-button" data-request="VC-1045">View details</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p id="emptyMessage" class="empty-message" hidden>No matching requests found.</p>
+          <p class="sample-note">Sample records shown for layout demonstration. Connect your backend to display actual customer data.</p>
+        </section>
+
+        <!-- PROFILE + SUPPORT -->
+        <section class="bottom-grid">
+          <article class="content-card profile-card" id="profile">
+            <div class="card-heading"><div><h3>Account Overview</h3><p>Your customer account</p></div><span class="mini-icon"><i data-lucide="user-round"></i></span></div>
+            <div class="customer-profile">
+              <div class="customer-avatar">VC</div>
+              <div><h4>VoltCare Customer</h4><p>Customer account</p><span class="account-badge"><i data-lucide="check-circle-2"></i> Account overview</span></div>
+            </div>
+            <div class="profile-line"><span>Account type</span><b>Standard Customer</b></div>
+            <div class="profile-line"><span>Service requests</span><b>4 sample records</b></div>
+            <a class="profile-link" href="contact.html">Update your details through support <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="support-banner">
+            <div class="support-symbol"><i data-lucide="headset"></i></div>
+            <span class="support-kicker">VOLTCARE SUPPORT</span>
+            <h3>Need electrical assistance?</h3>
+            <p>Contact our team for service enquiries, appointment updates or urgent electrical help.</p>
+            <a href="contact.html" class="support-button"><i data-lucide="message-circle"></i> Contact Support</a>
+            <a href="tel:+910000000000" class="support-phone"><i data-lucide="phone"></i> Call support</a>
+          </article>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="dashboard-footer">
+        <span>© <span id="footerYear"></span> VoltCare Electrical. All rights reserved.</span>
+        <div><a href="home.html">Website Home</a><a href="contact.html">Contact</a></div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- DETAILS DIALOG -->
+  <dialog id="requestDialog" class="request-dialog">
+    <div class="dialog-top"><h3>Service Request Details</h3><button id="closeDialog" class="icon-button" aria-label="Close"><i data-lucide="x"></i></button></div>
+    <div id="dialogBody"></div>
+    <button id="dialogDone" class="dialog-done">Close</button>
+  </dialog>
+
+  <script src="dash.js"></script>
+</body>
+</html>
+

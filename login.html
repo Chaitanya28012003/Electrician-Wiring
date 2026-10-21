@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your VoltCare customer account.">
+  <title>Customer Login | VoltCare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" type="image/png" href="images/logo img.jpeg">
+</head>
+
+<body>
+  <header class="login-header">
+    <a class="brand" href="home2.html" aria-label="VoltCare home">
+      <img src="images/logo img.jpeg" alt="VoltCare logo">
+      <span class="brand-copy">
+        <strong><span>Volt</span><span>Care</span></strong>
+        <small>Electrical</small>
+      </span>
+    </a>
+
+    <div class="header-right">
+      
+        
+    
+      
+
+      <button id="themeToggle" class="icon-button"
+        type="button" aria-label="Switch to dark mode" title="Dark mode">
+        <i data-lucide="moon"></i>
+      </button>
+
+      <button id="rtlToggle" class="icon-button"
+        type="button" aria-label="Toggle RTL layout" title="RTL / LTR">
+        <i data-lucide="arrow-left-right"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+    <section class="login-intro">
+      <span class="eyebrow"><i data-lucide="shield-check"></i> VOLTCARE CUSTOMER PORTAL</span>
+      <h1>Your electrical services,<br><span>within easy reach.</span></h1>
+      <p>Sign in to access your account and manage your service information.</p>
+    </section>
+
+    <section class="login-card" aria-labelledby="loginTitle">
+      <div class="card-top">
+        <div>
+          <span class="card-kicker">CUSTOMER ACCESS</span>
+          <h2 id="loginTitle">Welcome back</h2>
+          <p>Enter your details to continue to VoltCare.</p>
+        </div>
+        <div class="card-icon"><i data-lucide="user-round"></i></div>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="email">Email Address</label>
+            <div class="input-wrap">
+              <i data-lucide="mail" class="input-icon"></i>
+              <input id="email" name="email" type="email"
+                placeholder="you@example.com" autocomplete="username" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <i data-lucide="lock-keyhole" class="input-icon"></i>
+              <input id="password" name="password" type="password"
+                placeholder="Enter your password" autocomplete="current-password" required>
+
+              <button class="password-toggle" id="passwordToggle"
+                type="button" aria-label="Show password" aria-pressed="false">
+                <i data-lucide="eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-label" for="rememberMe">
+            <input id="rememberMe" type="checkbox" name="rememberMe">
+            <span>Remember my email</span>
+          </label>
+
+          <button type="button" class="text-button" id="forgotToggle">
+            Forgot Password?
+          </button>
+        </div>
+
+        <button class="submit-button" type="submit">
+          Sign In <i data-lucide="arrow-right"></i>
+        </button>
+
+        <p id="loginMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="account-row">
+        <p>Don't have an account?</p>
+        <a href="register.html">Create Account <i data-lucide="arrow-up-right"></i></a>
+      </div>
+
+      <div class="security-note">
+        <i data-lucide="shield-check"></i>
+        <span>Secure access to your VoltCare customer account</span>
+      </div>
+
+      <div id="resetPanel" class="reset-panel" hidden>
+        <h3>Reset your password</h3>
+        <p>Enter your registered email to request a password reset.</p>
+
+        <form id="resetForm">
+          <label for="resetEmail">Email Address</label>
+          <div class="input-wrap">
+            <i data-lucide="mail" class="input-icon"></i>
+            <input id="resetEmail" type="email"
+              placeholder="Registered email" required>
+          </div>
+
+          <button class="submit-button reset-submit" type="submit">
+            Request Reset <i data-lucide="arrow-right"></i>
+          </button>
+
+          <p id="resetMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="login-footer">
+      <p>© <span id="year"></span> VoltCare Electrical Services. All rights reserved.</p>
+      <div>
+        <a href="services.html">Services</a>
+        <a href="home2.html#contact">Contact Support</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

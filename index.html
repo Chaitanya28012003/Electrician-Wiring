@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VoltCare electrical repairs, installations, safety inspections and maintenance for residential and commercial properties.">
+
+  <title>VoltCare | Electrical Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="images/logo img.jpeg">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <!-- HEADER: MATCHES SERVICES PAGE -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+
+      <a class="brand" href="home4.html" aria-label="VoltCare home">
+        <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+
+        <span class="brand-copy">
+          <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+          <small>Electrical</small>
+        </span>
+      </a>
+
+     <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <div class="home-dropdown">
+        <button class="nav-link dropdown-trigger" id="homeDropdownBtn" aria-expanded="false">
+          Home <i data-lucide="chevron-down"></i>
+        </button>
+        <div class="dropdown-menu" id="homeDropdown">
+          <a href="index.html">Home 1 — Classic</a>
+          <a href="home2.html">Home 2 — Premium</a>
+        </div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="services.html">Services</a>
+      
+      <a class="nav-link" href="pricing.html">Pricing</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="dash.html">Dashboard</a>
+       <a href="login.html" class="mobile-login-link">
+    
+    <span>Login</span>
+  </a>
+    </nav>
+
+      <div class="header-actions">
+        <button class="round-control" id="themeToggle" type="button"
+          aria-label="Switch to dark mode" title="Dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+
+        <button class="round-control" id="rtlToggle" type="button"
+          aria-label="Toggle RTL" title="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <a class="header-cta" href="login.html">
+          Login
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button"
+        aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-photo">
+        <img src="images/home1hero.jpeg"
+          alt="Electrician performing professional electrical work">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content reveal">
+        <span class="eyebrow"><i data-lucide="zap"></i> YOUR LOCAL ELECTRICAL EXPERTS</span>
+
+       <h1>Reliable Service.<br>
+  <em>Safe Electrical</em><br>
+  Solutions.
+</h1>
+        <p>Professional electrical services for homes and businesses, with a focus on safety, dependable workmanship and clear communication.</p>
+
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">
+            Discover Our Services <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a href="#contact" class="btn btn-outline hero-outline">
+            <i data-lucide="phone-call"></i> Talk to Our Team
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="hero-note-icon"><i data-lucide="shield-check"></i></span>
+          <div>
+            <strong>Safety comes first.</strong>
+            <small>Thoughtful service at every step.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-side-label">VOLTCARE · ELECTRICAL SERVICES</div>
+      <a href="#services" class="hero-scroll"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <!-- QUICK BENEFITS -->
+    <section class="benefits-strip">
+      <div class="container benefits-grid">
+        <div class="benefit-item">
+          <i data-lucide="shield-check"></i>
+          <div><strong>Safety Focused</strong><small>Careful electrical work</small></div>
+        </div>
+
+        <div class="benefit-item">
+          <i data-lucide="clipboard-check"></i>
+          <div><strong>Clear Process</strong><small>Know what to expect</small></div>
+        </div>
+
+        <div class="benefit-item">
+          <i data-lucide="wrench"></i>
+          <div><strong>Practical Solutions</strong><small>Work tailored to your needs</small></div>
+        </div>
+
+        <div class="benefit-item">
+          <i data-lucide="messages-square"></i>
+          <div><strong>Friendly Support</strong><small>Helpful communication</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section section-pad" id="services">
+      <div class="container">
+        <div class="section-topline reveal">
+          <div>
+            <span class="eyebrow">WHAT WE CAN DO FOR YOU</span>
+            <h2>Electrical Services<br><em>Built Around Your Needs.</em></h2>
+          </div>
+
+         
+        </div>
+
+        <div class="services-layout">
+
+          <article class="service-feature reveal">
+            <div class="service-feature-image image-hover">
+             <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?auto=format&fit=crop&w=1100&q=85"
+     alt="Professional electrician testing an electrical panel">
+            </div>
+
+            <div class="service-feature-overlay"></div>
+
+            <div class="service-feature-content">
+              <span class="service-tag">01 / REPAIR &amp; DIAGNOSIS</span>
+              <h3>Find the Fault.<br>Fix It Properly.</h3>
+              <p>Get help understanding electrical problems and choosing the right repair approach.</p>
+              <a href="#contact" class="service-arrow" aria-label="Ask about electrical repairs">
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <div class="service-side-grid">
+
+            <article class="service-card reveal">
+              <div class="service-card-image image-hover">
+                <img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?auto=format&fit=crop&w=800&q=85"
+                  alt="Electrical wiring installation">
+              </div>
+
+              <div class="service-card-content">
+                <span class="service-icon"><i data-lucide="plug-zap"></i></span>
+                <span class="service-index">02</span>
+                <h3>Wiring &amp; Installation</h3>
+                <p>Installation and upgrade solutions for residential and commercial spaces.</p>
+                <a href="#contact" class="text-link">Explore service <i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-image image-hover">
+                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=85"
+                  alt="Technician reviewing electrical equipment">
+              </div>
+
+              <div class="service-card-content">
+                <span class="service-icon"><i data-lucide="scan-search"></i></span>
+                <span class="service-index">03</span>
+                <h3>Inspections &amp; Maintenance</h3>
+                <p>Checks and maintenance planning to help spot issues and support reliable operation.</p>
+                <a href="#contact" class="text-link">Explore service <i data-lucide="arrow-up-right"></i></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / FEATURE -->
+    <section class="about-section section-pad" id="about">
+      <div class="container about-grid">
+
+        <div class="about-image-column reveal">
+          <div class="about-image-main image-hover">
+           <img src="https://images.pexels.com/photos/27928761/pexels-photo-27928761.jpeg?auto=compress&cs=tinysrgb&w=1000"
+     alt="Electrician repairing electrical equipment">
+          </div>
+
+          <div class="about-image-note">
+            <span><i data-lucide="check-circle-2"></i></span>
+            <div><strong>Details matter.</strong><small>Every job deserves careful attention.</small></div>
+          </div>
+
+          <div class="about-yellow-shape"></div>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">THE VOLTCARE APPROACH</span>
+          <h2>We Believe Great Work<br><em>Starts With Trust.</em></h2>
+          <p>Electrical services should feel straightforward. We listen to your concerns, explain the options and help you understand the work that may be needed.</p>
+          <p>Our approach combines practical problem-solving with attention to detail, so your next step feels clear and informed.</p>
+
+          <div class="about-feature-list">
+            <div>
+              <span>01</span>
+              <div><strong>Listen &amp; Understand</strong><p>We start with your needs and the issue you're experiencing.</p></div>
+            </div>
+
+            <div>
+              <span>02</span>
+              <div><strong>Explain the Options</strong><p>We help clarify the scope of work and possible next steps.</p></div>
+            </div>
+
+            <div>
+              <span>03</span>
+              <div><strong>Focus on Quality</strong><p>We value careful work, safety and good communication.</p></div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            Get in Touch <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESIDENTIAL / COMMERCIAL -->
+    <section class="solutions-section section-pad">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">SOLUTIONS FOR EVERY PROPERTY</span>
+          <h2>One Reliable Team.<br><em>Different Electrical Needs.</em></h2>
+          <p>Choose the type of support that best describes your property or project.</p>
+        </div>
+
+        <div class="solutions-grid">
+
+          <article class="solution-card solution-home reveal">
+            <div class="solution-image image-hover">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                alt="Contemporary residential property">
+            </div>
+
+            <div class="solution-body">
+              <span class="eyebrow">RESIDENTIAL</span>
+              <h3>Comfort at Home.<br>Confidence in Every Connection.</h3>
+              <p>Discuss household electrical repairs, new fittings, upgrades and safety concerns.</p>
+              <a href="#contact" class="text-link">Home electrical enquiries <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="solution-card solution-business reveal">
+            <div class="solution-image image-hover">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern commercial office interior">
+            </div>
+
+            <div class="solution-body">
+              <span class="eyebrow">COMMERCIAL</span>
+              <h3>Keep Your Workplace<br>Ready for What's Next.</h3>
+              <p>Talk to us about business premises, installation requirements and planned .</p>
+              <a href="#contact" class="text-link">Business project enquiries <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY SECTION -->
+    <section class="safety-section section-pad">
+      <div class="container safety-grid">
+
+        <div class="safety-copy reveal">
+          <span class="eyebrow">MAKE SAFETY A PRIORITY</span>
+          <h2>Small Warning Signs<br><em>Deserve Attention.</em></h2>
+          <p>Electrical concerns should be taken seriously. If something seems unusual, stop using the affected equipment when safe to do so and seek qualified assistance.</p>
+
+          <div class="safety-warning-list">
+            <div><i data-lucide="alert-triangle"></i><span>Repeated circuit breaker trips</span></div>
+            <div><i data-lucide="thermometer"></i><span>Unusual heat or burning smells</span></div>
+            <div><i data-lucide="zap"></i><span>Flickering lights or recurring power issues</span></div>
+            <div><i data-lucide="plug"></i><span>Damaged outlets, switches or visible wiring</span></div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            Discuss a Safety Concern <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="safety-visual reveal">
+          <div class="safety-image image-hover">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=85"
+              alt="Technician carefully examining technical equipment">
+          </div>
+          <div class="safety-badge">
+            <i data-lucide="shield-check"></i>
+            <span>Safety-first<br>service mindset</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section section-pad" id="process">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2>A Clear Process.<br><em>No Guesswork.</em></h2>
+          <p>We make it easier to get started by keeping the steps simple and transparent.</p>
+        </div>
+
+        <div class="process-track">
+          <article class="process-item reveal">
+            <div class="process-number">01</div>
+            <div class="process-icon"><i data-lucide="messages-square"></i></div>
+            <h3>Make Contact</h3>
+            <p>Tell us what is happening or what you would like to install.</p>
+          </article>
+
+          <article class="process-item reveal">
+            <div class="process-number">02</div>
+            <div class="process-icon"><i data-lucide="clipboard-list"></i></div>
+            <h3>Discuss the Job</h3>
+            <p>Share the details needed to understand your requirements.</p>
+          </article>
+
+          <article class="process-item reveal">
+            <div class="process-number">03</div>
+            <div class="process-icon"><i data-lucide="wrench"></i></div>
+            <h3>Plan the Work</h3>
+            <p>Review the proposed work, timing and relevant costs.</p>
+          </article>
+
+          <article class="process-item reveal">
+            <div class="process-number">04</div>
+            <div class="process-icon"><i data-lucide="check-circle-2"></i></div>
+            <h3>Move Forward</h3>
+            <p>Proceed with the agreed next steps and service arrangements.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-section section-pad" id="pricing">
+      <div class="container">
+
+        <div class="section-topline reveal">
+          <div>
+            <span class="eyebrow">STRAIGHTFORWARD QUOTES</span>
+            <h2>Choose Your Service.<br><em>Discuss Your Requirements.</em></h2>
+          </div>
+
+         
+        </div>
+
+        <div class="pricing-grid">
+
+          <article class="pricing-card reveal">
+            <span class="pricing-symbol"><i data-lucide="house"></i></span>
+            <span class="pricing-type">HOME SERVICES</span>
+            <h3>Residential Care</h3>
+            <p>For household repairs, electrical fittings and everyday issues.</p>
+
+            <ul>
+              <li><i data-lucide="check"></i> Discuss repair requirements</li>
+              <li><i data-lucide="check"></i> Review installation needs</li>
+              <li><i data-lucide="check"></i> Request a tailored estimate</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-outline">Request a Quote</a>
+          </article>
+
+          <article class="pricing-card pricing-highlight reveal">
+            <span class="pricing-ribbon">PROJECT ENQUIRIES</span>
+            <span class="pricing-symbol"><i data-lucide="building-2"></i></span>
+            <span class="pricing-type">BUSINESS SERVICES</span>
+            <h3>Commercial Projects</h3>
+            <p>For workplaces, upgrades and planned electrical work.</p>
+
+            <ul>
+              <li><i data-lucide="check"></i> Discuss project scope</li>
+              <li><i data-lucide="check"></i> Review site requirements</li>
+              <li><i data-lucide="check"></i> Request a project estimate</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <span class="pricing-symbol"><i data-lucide="shield-check"></i></span>
+            <span class="pricing-type">SAFETY &amp; MAINTENANCE</span>
+            <h3>Inspection Support</h3>
+            <p>For customers who want to discuss checks and maintenance.</p>
+
+            <ul>
+              <li><i data-lucide="check"></i> Describe your concern</li>
+              <li><i data-lucide="check"></i> Ask about service options</li>
+              <li><i data-lucide="check"></i> Confirm the next steps</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-outline">Ask a Question</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section section-pad">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">THE SERVICE EXPERIENCE</span>
+          <h2>What Customers<br><em>Look for in a Team.</em></h2>
+          <p>Reliable communication, careful workmanship and a clear plan can make electrical projects easier to manage.</p>
+        </div>
+
+        <div class="testimonial-grid">
+
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <div class="testimonial-stars" aria-label="Five stars">★★★★★</div>
+            <p>“Clear explanations and a good understanding of the work needed make a real difference when arranging electrical repairs.”</p>
+
+            <div class="testimonial-person">
+              <span class="testimonial-avatar"><i data-lucide="user-round"></i></span>
+              <div><strong>Residential Customer</strong><small>Example testimonial</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card testimonial-middle reveal">
+            <div class="quote-mark">“</div>
+            <div class="testimonial-stars" aria-label="Five stars">★★★★★</div>
+            <p>“A structured approach to planning and communication helps business owners understand what needs to happen next.”</p>
+
+            <div class="testimonial-person">
+              <span class="testimonial-avatar"><i data-lucide="building-2"></i></span>
+              <div><strong>Business Customer</strong><small>Example testimonial</small></div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <div class="testimonial-stars" aria-label="Five stars">★★★★★</div>
+            <p>“Having the options explained clearly helps customers make more informed decisions about their electrical needs.”</p>
+
+            <div class="testimonial-person">
+              <span class="testimonial-avatar"><i data-lucide="user-round-check"></i></span>
+              <div><strong>Service Customer</strong><small>Example testimonial</small></div>
+            </div>
+          </article>
+
+        </div>
+
+       
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+   
+         
+
+           
+
+           
+
+    <!-- CTA -->
+    <section class="about-cta-section">
+      <div class="container">
+        <div class="about-cta reveal">
+          <div class="cta-decoration cta-decoration-one"></div>
+          <div class="cta-decoration cta-decoration-two"></div>
+         <div class="cta-copy">
+  <span class="eyebrow">
+    <i data-lucide="phone-call"></i> LET'S TALK
+  </span>
+
+  <h2>Need Electrical Help at Home?</h2>
+
+  <p>
+    From small repairs to new installations, our expert electricians are ready to help.
+  </p>
+</div>
+
+<a href="services.html" class="btn btn-light">
+  Book a Service <i data-lucide="arrow-up-right"></i>
+</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: MATCHES SERVICES PAGE -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a class="footer-brand brand" href="home4.html">
+            <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+
+            <span class="brand-copy">
+              <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+              <small>Electrical</small>
+            </span>
+          </a>
+
+         <p>
+  We deliver safe and reliable electrical services for homes and businesses, with quality workmanship and customer satisfaction at the heart of everything we do.
+</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://x.com/" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="home4.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <a href="#services">Electrical Installation</a>
+          <a href="#services">Electrical Repairs</a>
+          <a href="#services">Lighting Solutions</a>
+          <a href="#services">Wiring &amp; Maintenance</a>
+          <a href="#services">Safety Inspections</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get in Touch</h3>
+
+          <p>
+            <i data-lucide="phone"></i>
+            <a href="#contact">Contact our team</a>
+          </p>
+
+          <p>
+            <i data-lucide="mail"></i>
+            <a href="#contact">Send an enquiry</a>
+          </p>
+
+          <p>
+            <i data-lucide="map-pin"></i>
+            Residential &amp; Commercial Service
+          </p>
+
+          <a class="footer-booking" href="#contact">
+            Book an Appointment <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> VoltCare Electrical. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

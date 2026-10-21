@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact VoltCare Electrical to enquire about electrical repairs, installations, inspections and maintenance.">
+  <title>Contact Us | VoltCare Electrical</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/logo img.jpeg">
+
+  <!-- Shared design from your Pricing page -->
+  <link rel="stylesheet" href="pricing.css">
+  <!-- Contact page styles -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- HEADER: same structure as Pricing page -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="home2.html" aria-label="VoltCare home">
+        <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+        <span class="brand-copy">
+          <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+          <small>Electrical</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <div class="home-dropdown">
+          <button class="nav-link dropdown-trigger" id="homeDropdownBtn" aria-expanded="false" type="button">
+            Home <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="dropdown-menu" id="homeDropdown">
+            <a href="index.html">Home 1 — Classic</a>
+            <a href="home2.html">Home 2 — Premium</a>
+          </div>
+        </div>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="pricing.html">Pricing</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+        <a class="nav-link" href="dash.html">Dashboard</a>
+        <a href="login.html" class="mobile-login-link">
+  
+  <span>Login</span>
+</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="round-control" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="round-control" id="rtlToggle" type="button" aria-label="Toggle RTL" title="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+        <a class="header-cta" href="login.html">
+          Login
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: TEXT LEFT, IMAGE RIGHT -->
+    <section class="contact-hero">
+      <div class="container contact-hero-grid">
+        <div class="contact-hero-content reveal">
+          <span class="eyebrow"><i data-lucide="messages-square"></i> WE'RE HERE TO HELP</span>
+          <h1>Let's Talk About Your <span>Electrical Needs.</span></h1>
+          <p>
+            Have a question about an electrical repair, installation or maintenance?
+            Contact VoltCare and share what you need. Our team can help you understand
+            the next steps for your property.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact-form" class="btn btn-primary">
+              Send an Enquiry <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a href="#contact-details" class="btn btn-outline">Contact Information</a>
+          </div>
+          <div class="hero-points">
+            <span><i data-lucide="check-circle-2"></i> Home & business enquiries</span>
+            <span><i data-lucide="check-circle-2"></i> Clear next steps</span>
+          </div>
+        </div>
+
+        <div class="contact-hero-image reveal">
+         <img
+  src="images/conhero.jpeg"
+  alt="Electrical technician installing wiring in a home"
+  loading="lazy"
+>
+          <div class="contact-image-badge">
+            <span class="contact-badge-icon"><i data-lucide="zap"></i></span>
+            <div>
+              <strong>VoltCare Electrical</strong>
+              <small>Electrical service enquiries</small>
+            </div>
+          </div>
+          <div class="contact-image-corner">
+            <i data-lucide="shield-check"></i> Safety First
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: CONTACT DETAILS -->
+    <section class="section contact-details-section" id="contact-details">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>We're Ready to <span>Listen</span></h2>
+          <p>Choose the most convenient way to contact us about your electrical service requirements.</p>
+        </div>
+
+        <div class="contact-info-grid">
+          <article class="contact-info-card reveal">
+            <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+            <h3>Call Our Team</h3>
+            <p>Speak with us about the service you need and the next steps.</p>
+            <a href="#contact-form">Request a call <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="contact-info-card reveal">
+            <div class="contact-info-icon"><i data-lucide="mail"></i></div>
+            <h3>Email Enquiry</h3>
+            <p>Share your requirements and provide details about the job.</p>
+            <a href="#contact-form">Send a message <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="contact-info-card reveal">
+            <div class="contact-info-icon"><i data-lucide="map-pin"></i></div>
+            <h3>Service Location</h3>
+            <p>Tell us your property location so service availability .</p>
+            <a href="#contact-form">Share your location <i data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <article class="contact-info-card reveal">
+            <div class="contact-info-icon"><i data-lucide="calendar-clock"></i></div>
+            <h3>Service Scheduling</h3>
+            <p>Let us know your preferred date and time for the enquiry.</p>
+            <a href="#contact-form">Discuss a schedule <i data-lucide="arrow-up-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT FORM -->
+    <section class="section contact-form-section" id="contact-form">
+      <div class="container contact-form-grid">
+        <div class="contact-form-intro reveal">
+          <span class="eyebrow">SEND YOUR REQUIREMENTS</span>
+          <h2>How Can We <span>Help You?</span></h2>
+          <p>
+            Complete the form with a few details about your electrical needs.
+            Include your preferred service and a short description so the enquiry
+            can be reviewed.
+          </p>
+
+          <div class="contact-assurance-list">
+            <div>
+              <span><i data-lucide="check"></i></span>
+              <div>
+                <strong>Describe the issue</strong>
+                <p>Tell us what needs repair, installation or inspection.</p>
+              </div>
+            </div>
+            <div>
+              <span><i data-lucide="check"></i></span>
+              <div>
+                <strong>Share your preferences</strong>
+                <p>Include a suitable time and your property location.</p>
+              </div>
+            </div>
+            <div>
+              <span><i data-lucide="check"></i></span>
+              <div>
+                <strong>Review before confirming</strong>
+                <p>Discuss the scope and applicable charges before work begins.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-side-image">
+            <img
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85"
+              alt="Technician carefully inspecting technical equipment"
+              loading="lazy"
+            >
+            <div class="contact-side-image-label">
+              <i data-lucide="shield-check"></i>
+              <span>Careful work. Clear communication.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <div class="contact-form-card-heading">
+            <span class="form-heading-icon"><i data-lucide="send"></i></span>
+            <div>
+              <h3>Send an Enquiry</h3>
+              <p>Fields marked with * are required.</p>
+            </div>
+          </div>
+
+          <form id="enquiryForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" autocomplete="tel" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Required *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="Electrical Repair">Electrical Repair</option>
+                  <option value="Electrical Installation">Electrical Installation</option>
+                  <option value="Wiring and Maintenance">Wiring & Maintenance</option>
+                  <option value="Lighting Solutions">Lighting Solutions</option>
+                  <option value="Safety Inspection">Safety Inspection</option>
+                  <option value="Commercial Electrical Work">Commercial Electrical Work</option>
+                  <option value="Other Enquiry">Other Enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="location">Property Location *</label>
+                <input id="location" name="location" type="text" placeholder="Area or city" autocomplete="address-level2" required>
+              </div>
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input id="preferredDate" name="preferredDate" type="date">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About the Job *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe the electrical issue or work required..." required></textarea>
+            </div>
+
+            <label class="form-consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span>I agree that the details I provide may be used to respond to this enquiry. *</span>
+            </label>
+
+            <button class="btn btn-primary contact-submit-btn" type="submit">
+              Submit Enquiry <i data-lucide="arrow-up-right"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <p class="form-note"><i data-lucide="lock-keyhole"></i> Please do not include passwords, payment details or other sensitive information.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES -->
+    <section class="section contact-services-section" id="contact-services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">HOW WE CAN ASSIST</span>
+          <h2>Electrical Services for <span>Everyday Needs</span></h2>
+          <p>Choose a service category and send us your requirements to discuss the next steps.</p>
+        </div>
+
+        <div class="contact-services-grid">
+          <article class="contact-service-card reveal">
+            <div class="contact-service-image">
+          <img
+  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1100&q=85"
+  alt="Electrician performing electrical installation and repair work"
+  loading="lazy"
+>
+              <span class="service-image-icon"><i data-lucide="wrench"></i></span>
+            </div>
+            <div class="contact-service-content">
+              <span class="service-number">01 / REPAIRS</span>
+              <h3>Electrical Repairs</h3>
+              <p>Enquire about troubleshooting, faulty fittings, switches, outlets and other electrical concerns.</p>
+              <a href="#contact-form" data-service="Electrical Repair">Enquire about repairs <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="contact-service-card reveal">
+            <div class="contact-service-image">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=850&q=85" alt="Electrical tools used for installation work" loading="lazy">
+              <span class="service-image-icon"><i data-lucide="plug-zap"></i></span>
+            </div>
+            <div class="contact-service-content">
+              <span class="service-number">02 / INSTALLATIONS</span>
+              <h3>Electrical Installations</h3>
+              <p>Discuss new fittings, electrical equipment, outlets and installation requirements for your property.</p>
+              <a href="#contact-form" data-service="Electrical Installation">Enquire about installation <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="contact-service-card reveal">
+            <div class="contact-service-image">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=850&q=85" alt="Modern office interior for commercial electrical services" loading="lazy">
+              <span class="service-image-icon"><i data-lucide="building-2"></i></span>
+            </div>
+            <div class="contact-service-content">
+              <span class="service-number">03 / BUSINESSES</span>
+              <h3>Commercial Maintenance</h3>
+              <p>Ask about electrical maintenance planning for shops, offices and other commercial properties.</p>
+              <a href="#contact-form" data-service="Commercial Electrical Work">Enquire for business <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROCESS AND FAQ -->
+    <section class="section contact-process-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">WHAT HAPPENS NEXT?</span>
+          <h2>A Simple Enquiry <span>Process</span></h2>
+          <p>Understand the steps from sharing your requirements to discussing the work.</p>
+        </div>
+
+        <div class="contact-process-grid">
+          <article class="contact-process-card reveal">
+            <span class="process-step">01</span>
+            <div class="process-icon"><i data-lucide="message-square"></i></div>
+            <h3>Send Your Enquiry</h3>
+            <p>Describe the electrical work and share your contact details and property location.</p>
+          </article>
+          <article class="contact-process-card reveal">
+            <span class="process-step">02</span>
+            <div class="process-icon"><i data-lucide="clipboard-check"></i></div>
+            <h3>Discuss Requirements</h3>
+            <p>Review the issue, service scope, site requirements and any information still needed.</p>
+          </article>
+          <article class="contact-process-card reveal">
+            <span class="process-step">03</span>
+            <div class="process-icon"><i data-lucide="calendar-check"></i></div>
+            <h3>Plan the Service</h3>
+            <p>Confirm the estimate, materials, availability and schedule before work begins.</p>
+          </article>
+        </div>
+
+        <div class="contact-faq-layout">
+          <div class="contact-faq-intro reveal">
+            <span class="eyebrow">COMMON QUESTIONS</span>
+            <h2>Before You <span>Contact Us</span></h2>
+            <p>Some useful information to help you prepare your enquiry.</p>
+            <a href="#contact-form" class="btn btn-primary">Send an Enquiry <i data-lucide="arrow-up-right"></i></a>
+          </div>
+
+          <div class="contact-faq-list reveal">
+            <details class="faq-item">
+              <summary>What information should I provide?<span><i data-lucide="plus"></i></span></summary>
+              <p>Share the type of service, a short description of the issue, your property location and a suitable way to contact you.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I request a price estimate first?<span><i data-lucide="plus"></i></span></summary>
+              <p>Yes. Describe the work and ask for an estimate. The final amount may depend on the site, labour, materials and scope.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I request service for a business property?<span><i data-lucide="plus"></i></span></summary>
+              <p>Yes. Select the commercial service option and include details about your office, shop or other property.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Does submitting this form confirm a booking?<span><i data-lucide="plus"></i></span></summary>
+              <p>No. An enquiry is not a confirmed booking. Availability, charges and scheduling need to be confirmed with the service provider.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CTA -->
+    <section class="contact-cta-section">
+      <div class="container">
+        <div class="contact-cta reveal">
+          <div class="contact-cta-decoration contact-decoration-one"></div>
+          <div class="contact-cta-decoration contact-decoration-two"></div>
+          <div class="contact-cta-copy">
+            <span class="eyebrow">YOUR NEXT STEP STARTS HERE</span>
+            <h2>Have an Electrical Project in Mind?</h2>
+            <p>Tell us what you need and start a conversation about your electrical service requirements.</p>
+          </div>
+          <a href="#contact-form" class="btn btn-light">
+            Contact VoltCare <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: same structure as Pricing page -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a class="footer-brand brand" href="home2.html">
+            <img src="images/logo img.jpeg" alt="VoltCare logo" class="brand-logo">
+            <span class="brand-copy">
+              <strong><span>Volt</span><span class="brand-accent">Care</span></strong>
+              <small>Electrical</small>
+            </span>
+          </a>
+            <p>
+  We deliver safe and reliable electrical services for homes and businesses, with quality workmanship and customer satisfaction at the heart of everything we do.
+</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="home2.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Services</h3>
+          <a href="services.html#our-services">Electrical Installation</a>
+          <a href="services.html#our-services">Electrical Repairs</a>
+          <a href="services.html#our-services">Lighting Solutions</a>
+          <a href="services.html#our-services">Wiring & Maintenance</a>
+          <a href="services.html#our-services">Safety Inspections</a>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Get in Touch</h3>
+          <p><i data-lucide="phone"></i> <a href="#contact-form">Contact our team</a></p>
+          <p><i data-lucide="mail"></i> <a href="#contact-form">Send an enquiry</a></p>
+          <p><i data-lucide="map-pin"></i> Residential & Commercial Service</p>
+          <a class="footer-booking" href="#contact-form">Book an Appointment <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> VoltCare Electrical. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="pricing.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
