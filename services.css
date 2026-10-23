@@ -114,7 +114,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--footer-bg);
+  background: var(--primary);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   box-shadow: 0 5px 22px rgba(0, 0, 0, .08);
 }
@@ -1066,7 +1066,7 @@ p {
 
 /* FOOTER */
 .site-footer {
-  background: var(--footer-bg);
+  background: var(--primary);
   color: var(--footer-text);
   border-top: 3px solid var(--secondary);
   padding-top: 60px;
@@ -1858,3 +1858,68 @@ html[dir="rtl"] .eyebrow {
     display: none;
   }
 }
+/* ABOUT PAGE - DARK MODE FOOTER */
+body.dark-mode .site-footer {
+  background: #091722 !important;
+  color: #E2E8F0;
+}
+
+/* Footer headings */
+body.dark-mode .site-footer h3 {
+  color: #FFFFFF;
+}
+
+/* Footer links and text */
+body.dark-mode .site-footer p,
+body.dark-mode .site-footer a:not(.brand) {
+  color: #CBD5E1;
+}
+
+/* Footer hover */
+body.dark-mode .site-footer a:hover {
+  color: var(--secondary);
+}
+
+/* Footer bottom */
+body.dark-mode .site-footer .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+/* ABOUT PAGE - LIGHT MODE HEADER */
+.site-header {
+  background: var(--primary) !important;
+  transition: background 0.3s ease;
+}
+
+/* ABOUT PAGE - DARK MODE HEADER */
+body.dark-mode .site-header {
+  background: #091722 !important;
+}
+
+/* Dark mode header navigation text */
+body.dark-mode .site-header .nav-link,
+body.dark-mode .site-header .dropdown-trigger {
+  color: #FFFFFF;
+}
+
+/* Dark mode header logo text */
+body.dark-mode .site-header .brand-copy strong {
+  color: #FFFFFF;
+}
+
+/* Header hover */
+body.dark-mode .site-header .nav-link:hover {
+  color: var(--secondary);
+}
+/* About page - Keep active link visible in dark mode */
+
+body.dark-mode .main-nav .nav-link.active {
+  color: #F59E0B !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Active link underline / indicator */
+body.dark-mode .main-nav .nav-link.active::after {
+  background-color: #F59E0B !important;
+}
+

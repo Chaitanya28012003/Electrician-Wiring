@@ -30,14 +30,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
     <nav class="main-nav" id="mainNav" aria-label="Main navigation">
       <div class="home-dropdown">
-        <button class="nav-link dropdown-trigger" id="homeDropdownBtn" aria-expanded="false">
-          Home <i data-lucide="chevron-down"></i>
-        </button>
-        <div class="dropdown-menu" id="homeDropdown">
-          <a href="index.html">Home 1 — Classic</a>
-          <a href="home2.html">Home 2 — Premium</a>
-        </div>
-      </div>
+  <button
+    class="nav-link dropdown-trigger active"
+    id="homeDropdownBtn"
+    aria-expanded="false"
+  >
+    Home <i data-lucide="chevron-down"></i>
+  </button>
+
+  <div class="dropdown-menu" id="homeDropdown">
+    <a href="index.html">Home 1 — Classic</a>
+    <a href="home2.html" class="active">Home 2 — Premium</a>
+  </div>
+</div>
       <a class="nav-link" href="about.html">About</a>
       <a class="nav-link" href="services.html">Services</a>
       
@@ -145,7 +150,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       <div class="service-grid">
         <article class="service-card">
           <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=85" alt="Electrician working on electrical wiring" loading="lazy">
-          <div class="service-card-body"><span class="card-icon"><i data-lucide="cable"></i></span><h3>Home Wiring</h3><p>Wiring installation, replacement and electrical upgrades for your home.</p><a href="#contact">Explore service <i data-lucide="arrow-up-right"></i></a></div>
+          <div class="service-card-body"><span class="card-icon"><i data-lucide="cable"></i></span><h3>Home Wiring</h3><p>Wiring installation, replacement and electrical upgrades.</p><a href="#contact">Explore service <i data-lucide="arrow-up-right"></i></a></div>
         </article>
         <article class="service-card">
          <img

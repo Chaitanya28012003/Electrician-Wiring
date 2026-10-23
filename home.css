@@ -217,7 +217,7 @@ section {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: var(--footer-bg);
+  background: var(--primary);
   
   box-shadow: 0 5px 22px rgba(0, 0, 0, .08);
 }
@@ -457,6 +457,7 @@ section {
 body.dark-mode .site-header {
   background: var(--footer-bg);
 }
+
 
 /* =========================================================
    HERO — ORIGINAL HOME 4 DESIGN
@@ -1785,7 +1786,7 @@ body.dark-mode .text-link {
 
 .site-footer {
   padding-top: 60px;
-  background: var(--footer-bg);
+  background: var(--primary);
   color: var(--footer-text);
   border-top: 3px solid var(--secondary);
 }
